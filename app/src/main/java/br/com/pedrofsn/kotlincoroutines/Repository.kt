@@ -19,4 +19,8 @@ class Repository {
         retrofit.create(API::class.java)
     }
 
+    suspend fun getBooks(): List<Book> {
+        return service.getBooks()
+    }
+
 }
